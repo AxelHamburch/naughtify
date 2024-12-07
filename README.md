@@ -179,7 +179,7 @@ Restart or reload Caddy to apply the changes:
 sudo systemctl reload caddy
 ```
 
-If you now call up the web domain in the browser, you should see a `HTTP ERROR 502` error. This means that it reaches the Caddy server, but the forwarding to Naughtify fails. Which is no wonder, as Naughtify has not yet started. Later you will simply see a white page, which shows you that you have reached the server and Naughtify has started.
+If you now call up the web domain in the browser, you should see a `HTTP ERROR 502` error. This means that it reaches the Caddy server, but the forwarding to Naughtify fails. Which is no wonder, as Naughtify has not yet started. Later you will simply see a white page with "🔍 LNbits Monitor is running.", which shows you that you have reached the server and Naughtify has started.
 
 If you still have a problem, the following commands may help with debugging:
 
