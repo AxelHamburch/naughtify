@@ -140,7 +140,7 @@ sudo apt update
 sudo apt install caddy
 ```
 
--> Test the web server in your internet browser with: http://yourIPaddress. Note: Does not work with every browser.
+-> Test the web server in your internet browser with: http://yourIPaddress. You should see a Caddy web page.
 
 #### Step b: Configure the Caddyfile
 
@@ -179,7 +179,9 @@ Restart or reload Caddy to apply the changes:
 sudo systemctl reload caddy
 ```
 
-If you now call up the web domain in the browser, you should see a white page. This is fine. If not, you can find a few commands for debugging here. 
+If you now call up the web domain in the browser, you should see a `HTTP ERROR 502` error. This means that it reaches the Caddy server, but the forwarding to Naughtify fails. Which is no wonder, as Naughtify has not yet started. Later you will simply see a white page, which shows you that you have reached the server and Naughtify has started.
+
+If you still have a problem, the following commands may help with debugging:
 
 ```bash
 sudo systemctl status caddy
